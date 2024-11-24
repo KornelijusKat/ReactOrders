@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import OrderForm from './components/OderFrom/OrderForm'
 import OrderList from './components/OrderList/OrderList'
 import filterOrders from './components/modules/filterOrders'
+import './components/scss/global.scss';
 function App() {
   const [orders, setOrders] = useState([]);
   const[filter, setFilter] = useState('all')
@@ -31,9 +32,9 @@ function App() {
       <div className="card">
         <div className="card-buttons d-flex justify-content-center">
           <div className="filter-buttons">
-            <button onClick={() => setFilter('all')}>All</button>
-            <button onClick={() => setFilter('finished')}>finished</button>
-            <button onClick={() => setFilter('unfinished')}>Unfinished</button>
+            <button className = 'btn btn-primary' onClick={() => setFilter('all')}>All</button>
+            <button className = 'btn btn-primary' onClick={() => setFilter('finished')}>finished</button>
+            <button className = 'btn btn-primary' onClick={() => setFilter('unfinished')}>Unfinished</button>
           </div>
         </div>
         <OrderList orders={filterOrders(orders,filter)} onToggleStatus={toggleOrderStatus} />

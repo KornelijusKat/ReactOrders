@@ -16,7 +16,7 @@ const OrderForm = ({onAddOrder}) =>{
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
-            <button className="ms-2 mb-2"type="submit">Add Order</button>
+            <button className="btn btn-primary ms-2 mb-2"type="submit">Add Order</button>
         </form>
     )
 }

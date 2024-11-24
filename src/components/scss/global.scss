@@ -1,0 +1,16 @@
+body{
+    background-color:#F0F8FF;
+    .btn-primary{
+        border-color: transparent;
+        color:#ffffff;
+        padding: 5px 20px;
+        margin-right:5px;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        cursor: pointer;
+        transition: border-color 0.25s;
+        margin-bottom: 10px;
+        width:150px;
+    }
+}

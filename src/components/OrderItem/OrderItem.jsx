@@ -6,10 +6,10 @@ const OrderItem = ({order, onToggleStatus}) =>{
             <ul className='list-group'>
                 <li className='list-group-item'>
                     <div className='order-content'> 
-                    <p>Order: {order.title} Status: {order.status}</p>
+                        <p>Order: {order.title} Status: {order.status}</p>
                     </div>
-                    <button className='mt-2' onClick={() => onToggleStatus(order.id)}>
-                        Change Status
+                    <button className='btn btn-primary' onClick={() => onToggleStatus(order.id)}>
+                        Complete
                     </button>
                 </li>
             </ul>
